@@ -1,0 +1,197 @@
+/* Styles pour div gauche */
+.left-side {
+    width: 15%;
+    float: left;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Styles pour div droite */
+.right-side {
+    width: 70%;
+    float: right;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+
+/* Clearfix pour gérer les floats */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Styles généraux */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: #e3f2fd;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+article ,
+.formCreate{
+    width: 100%;
+    max-width: 40%;
+    padding: 1rem;
+    background-color: #fff;
+    border: 1px solid #d5d5d5;
+    border-radius: 10px;
+    box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.1);
+    animation: slide-in-right-to-left 0.5s ease-in-out forwards;
+    margin-left: 26rem;
+}
+.formCreate{
+    margin-top: 3rem;
+}
+
+article img {
+    border-radius: 5px;
+    animation-name: fade;
+    animation-duration: 1s;
+}
+
+article h2 {
+    margin: 0.5rem 0;
+    padding: 2px;
+    font: 600 24px sans-serif;
+    color: #03a9f4;
+    animation: fadetext 2s ease-in-out forwards;
+}
+
+article p {
+    margin-bottom: 1rem;
+    padding: 2px;
+    color: #777;
+    font-family: sans-serif;
+    animation: fadetext 2.2s ease-in-out forwards;
+}
+
+article button {
+    padding: 0.5rem 0.7rem;
+    display: block;
+    background-color: #03a9f4;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s all;
+    animation: slide-in-top-to-bottom 1.5s;
+}
+
+article button:hover {
+    background-color: #29b6f6;
+    transform: translatey(-2px);
+    box-shadow: 0 7px 7px rgba(0, 0, 0, 0.1);
+}
+
+article button:active {
+    transform: translatey(0);
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+ul {
+    list-style: none; /* Supprimer les puces */
+    margin-top: 10px;
+}
+
+li {
+    cursor: pointer;
+    color: #21214d;
+    margin-bottom: 10px; 
+    border-radius: 5px;
+    background-color: #f0f0f0; 
+    padding: 5px; 
+   
+}
+
+li:hover {
+    background-color: #e0e0e0; /* Couleur de fond au survol */
+}
+
+.buttons {
+    display: flex;
+
+}
+
+.buttons button {
+    margin-right: 10px;
+
+}
+
+.info {
+    display: flex;
+
+}
+
+.info p {
+    margin-right: 10px;
+
+}
+
+.hidden
+{
+    visibility : hidden;
+}
+
+
+form {
+    margin-top: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  textarea {
+    height: 150px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
